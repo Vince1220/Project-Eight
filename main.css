@@ -64,6 +64,277 @@ z-index: 9999;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 65%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
   }
+
+  .text {
+    color: white;
+    width: 15%;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: col;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  img.title {
+    height: 2rem;
+  }
+
+  .gap-1 {
+    gap: 1rem;
+  }
+  
+  .v-align-center {
+    vertical-align: middle;
+  }
+  
+  .v-align-top {
+    vertical-align: top;
+    align-self: flex-start;
+  }
+  
+  .v-align-bottom {
+    vertical-align: bottom;
+    align-self: flex-end;
+  }
+  
+  .icon-rtl {
+    padding-right: 1.5rem;
+    background: url("./assets/1200px-Google_Magnifying_Glass.svg.png") no-repeat right;
+    background-size: 1rem;
+  }
+
+  .pl-5 {
+    padding-left: 0.3rem;
+  }
+  
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .heading-underline {
+    border: 0.15rem solid black;
+    width: 66%;
+    margin: 0 0 2rem 0;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  
+  .main-left {
+    flex-grow: 2;
+  }
+  
+  .main-left > p {
+    padding-left: 5rem;
+  }
+  
+  .main-left > .inner-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .main-left > .inner-section > img {
+    width: 18.5rem;
+  }
+
+  
+.main-left > .inner-section > .p-column {
+    margin-left: 2.5rem;
+  }
+  
+  .main-right {
+    flex-grow: 1;
+  }
+  
+  .main-right > img {
+    position: relative;
+    width: 25rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 1;
+  }
+  
+  .products {
+    gap: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
+  
+  .card > a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .card > a > img {
+    /* position: relative; */
+    width: 100%;
+    height: 16rem;
+  }
+  
+  .card > a > .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card > a > .heading > h3 {
+    text-transform: uppercase;
+  }
+  
+  .card > a > .heading-underline {
+    border: 0.15rem solid black;
+    width: 66%;
+    margin: 0 0 1rem 0;
+  }
+  
+  .card > a > p {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .card > .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .card > .buttons > a {
+    text-transform: uppercase;
+    color: #BF7631;
+    font-size: 1rem;
+  }
+  
+  .card > .buttons > button {
+    text-transform: uppercase;
+    background-color: #BF7631;
+    color: #ffffff;
+    border: 0;
+    padding: 0.5rem;
+  }
+  
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact > form > div.form-control > label, input#email, textarea {
+    display: block;
+    width: 40rem;
+  }
+
+  .contact > form > .form-control > label {
+    text-transform: uppercase;
+    padding-bottom: 0.25rem;
+  }
+  
+  .contact > form > .form-control:nth-child(2) > label {
+    margin-top: 1.5rem;
+  }
+  
+  .contact > form > div > .form-submit {
+    text-transform: uppercase;
+    background-color: #BF7631;
+    color: #ffffff;
+    border: 0;
+    padding: 0.25rem 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .align-right {
+    text-align: right;
+    border: 0;
+  }
+
+  footer {
+    margin-top: 3rem;
+    background-color: #BF7631;
+  }
+  
+  footer > .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40rem;
+    align-items: center;
+  }
+  
+  footer > .main-content > .icon-group > img {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  footer > .main-content > .logo > img {
+    height: 3rem;
+    width: 3rem;
+  }
+  footer > .main-content > .logo > span {
+    text-transform: uppercase;
+  }
+  
+  footer > .footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 27rem;
+    padding-right: 1rem;
+  }
+  
+  footer > .footer-text > p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+  }
 nav a {
 
 }
